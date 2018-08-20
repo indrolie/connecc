@@ -21,14 +21,14 @@ class Textbox extends Component {
 
   render() {
     return (
-      <div>
-        <p className="label">{this.props.text}</p>
+      <div className="form-group">
+        <label>{this.props.text}</label>
         <input
-          className="textbox"
-          name={this.props.name}
           type={this.props.type}
-          onChange={this.handleChange}
+          className="form-control"
           id={this.props.id}
+          placeholder={this.props.placeholder}
+          maxlength="30"
         />
       </div>
     );
