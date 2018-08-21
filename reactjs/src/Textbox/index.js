@@ -6,17 +6,9 @@ class Textbox extends Component {
   constructor(props) {
     super(props);
 
-    this.handleChange = this.handleChange.bind(this);
-
     this.state = {
-      text: 'Username'
+      text: ''
     };
-  }
-
-  handleChange(event) {
-    this.setState({
-      text: event.target.value
-    });
   }
 
   render() {

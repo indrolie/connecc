@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './index.css';
+
 class Heading1 extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +20,7 @@ class Heading1 extends Component {
   }
 
   render() {
-    return <p>{this.props.text}</p>;
+    return <p className="h1">{this.props.text}</p>;
   }
 }
 
